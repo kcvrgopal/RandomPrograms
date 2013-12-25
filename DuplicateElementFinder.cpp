@@ -1,19 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
-int* generateRandom(int n)
-{
-	int a[n];
-	for(int i=0;i<n;i++)
-	{
-		a[i]=i+1;
-	}
-	int j=rand() % n;
-	int v=(rand() % n) + 1;
-	a[j]=v;
-	return a;
-	
-}
 int check(int a[],int n)
 {
 	for(int i=0;i<n-2;i++)
